@@ -1,0 +1,2446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+	data-menu-styles="dark" data-toggled="close">
+
+<head>
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<!-- TITLE -->
+	<title>Admin </title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="build/assets/img/brand-logos/urbana logo yt.png" type="image/x-icon">
+
+	<!-- ICONS CSS -->
+	<link href="build/assets/icon-fonts/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- Choices JS -->
+	<script src="build/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+	<!-- Bootstrap Css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<link rel="preload" as="style" href="build/assets/app-C3rLMrk5.css" />
+	<link rel="stylesheet" href="build/assets/app-C3rLMrk5.css" />
+	<!-- Main Theme Js -->
+	<script src="build/assets/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.snow.css" rel="stylesheet" />
+</head>
+
+<body class="">
+
+	<div class="page">
+
+		<!-- Main-Header -->
+		<header class="app-header">
+
+			<!-- Start::main-header-container -->
+			<div class="main-header-container container-fluid">
+
+				<!-- Start::header-content-left -->
+				<div class="header-content-left">
+
+
+					<!-- Start::header-element -->
+					<div class="header-element">
+						<!-- Start::header-link -->
+						<div class="">
+							<a class="sidebar-toggle sidemenu-toggle header-link" data-bs-toggle="sidebar"
+								href="javascript:void(0);">
+								<span class="sr-only">Toggle Navigation</span>
+								<i class="bi bi-list header-icon"></i>
+							</a>
+						</div>
+						<a aria-label="Hide Sidebar"
+							class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
+							data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+						<!-- End::header-link -->
+					</div>
+					<!-- End::header-element -->
+
+
+				</div>
+				<!-- End::header-content-left -->
+
+				<!-- Start::header-content-right -->
+				<div class="header-content-right">
+
+
+					<!-- Start::header-element -->
+					<!-- lang -->
+					<!-- End::header-element -->
+
+					<!-- Start::Seacrch -->
+					<div class="header-element header-search">
+				
+						<a href="javascript:void(0);" class="header-link" data-bs-toggle="modal"
+							data-bs-target="#searchModal">
+							<i class="ri-search-2-line header-link-icon"></i>
+						</a>
+			
+					</div>
+					<!-- End::Seacrch -->
+
+					<!-- Start:: ORDERSSSS -->
+					<div class="header-element cart-dropdown">
+						
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside"
+							data-bs-toggle="dropdown">
+							<i class="ri-shopping-basket-line  header-link-icon"></i>
+							<span class="badge bg-danger rounded-pill header-icon-badge" id="cart-icon-badge">
+								4
+							</span>
+						</a>
+						
+						<!-- Start::main-header-dropdown   -->
+						<div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center justify-content-between">
+									<p class="mb-0 fs-15 fw-semibold">Orders</p>
+									<span class="badge badge-light-2" id="cart-data">4 Items</span>
+								</div>
+							</div>
+							<div>
+								<hr class="dropdown-divider">
+							</div>
+							<ul class="list-unstyled mb-0" id="header-cart-items-scroll">
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/1.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="orderdetails.html">Black Heals For Women</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$699</li>
+													<li class="text-decoration-line-through text-muted">$999</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/2.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="orderdetails.html">Tshirt For Men</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item">
+													<li>$245</li>
+													<li><span
+															class="text-decoration-line-through text-muted">$599</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/9.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="orderdetails.html">Travel Bag For Womens</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$299</li>
+													<li class="text-decoration-line-through text-muted">$399</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/10.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="orderdetails.html">Leather Wallet For Grils</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$100</li>
+													<li class="text-decoration-line-through text-muted">$150</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="p-3 empty-header-item border-top">
+								<div class="d-grid">
+									<a href="activeorder.html" class="btn btn-primary">View Orders</a>
+								</div>
+							</div>
+
+
+							<!-- if there is no order  -->
+							<div class="p-5 empty-item d-none">
+								<div class="text-center">
+									<span class="avatar avatar-xxl avatar-rounded bg-primary-transparent">
+										<i class="ri-shopping-cart-2-line fs-2"></i>
+									</span>
+									<h6 class="fw-bold mb-1 mt-3">No Orders In Cart</h6>
+									<span class="mb-3 fw-normal fs-13 d-block">When you have Orders added here , they
+										will appear here.</span>
+
+								</div>
+							</div>
+
+						</div>
+						<!-- End::main-header-dropdown -->
+					</div>
+					<!-- End:: ORDERSSSS -->
+
+					<!-- Start:: Notificton-->
+					<div class="header-element notifications-dropdown">
+					
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown"
+							data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
+							<i class="ri-notification-2-line header-link-icon animate-bell"></i>
+							<span class="badge bg-success rounded-pill header-icon-badge pulse pulse-success"
+								id="notification-icon-badge">4</span>
+						</a>
+						
+						<!-- Start::main-header-dropdown -->
+						<div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center justify-content-between">
+									<p class="mb-0 fs-15 fw-semibold">Notifications</p>
+								
+								</div>
+							</div>
+							<div class="dropdown-divider"></div>
+							<ul class="list-unstyled mb-0" id="header-notification-scroll">
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<a href="inbox.html" class="stretched-link text-danger"
+											style="position: relative;"></a>
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/17.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="inbox.html">Elon Isk</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Hello
+													there! How are you doing? Call me when...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">2 min</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/2.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="inbox.html">Shakira Sen</a>
+												</p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">I
+													would like to discuss about that assets...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">09:43</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/21.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="inbox.html">Sebastian</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Shall
+													we go to the cafe at downtown...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/11.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="inbox.html">Charlie
+														Davieson</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Lorem
+													ipsum dolor sit amet, consectetur</span>
+												<p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="p-3 empty-header-item1 border-top">
+								<div class="d-grid">
+									<a href="inbox.html" class="btn btn-primary">View All</a>
+								</div>
+							</div>
+							<div class="p-5 empty-item1 d-none">
+								<div class="text-center">
+									<span class="avatar avatar-xl avatar-rounded bg-secondary-transparent">
+										<i class="ri-notification-off-line fs-2"></i>
+									</span>
+									<h6 class="fw-semibold mt-3">No New Notifications</h6>
+								</div>
+							</div>
+						</div>
+						<!-- End::main-header-dropdown -->
+					</div>
+					<!-- End::Notificton -->
+
+
+					<!-- Start::nt    Profile-->
+					<div class="header-element">
+						<!-- Start::header-link|dropdown-toggle -->
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile"
+							data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+							<div class="d-flex align-items-center">
+								<div class="">
+									<img src="build/assets/img/users/1.jpg" alt="img" width="30" height="30"
+										class="rounded-circle">
+								</div>
+							</div>
+						</a>
+						<!-- End::header-link|dropdown-toggle -->
+						<div class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
+							aria-labelledby="mainHeaderProfile">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center">
+									<div class="me-sm-2 me-0 avatar">
+										<img src="build/assets/img/users/1.jpg" alt="img" class="rounded-circle">
+									</div>
+									<div class="d-sm-block d-none">
+										<p class="fw-semibold mb-0 lh-1">Json Taylor</p>
+										<span class="op-7 fw-medium d-block fs-12">Web Designer</span>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown-divider mb-0"></div>
+							<ul class="list-unstyled mb-0">
+				
+								<li><a class="dropdown-item d-flex" href="inbox.html"><i
+											class="ti ti-inbox fs-18 me-2"></i>Inbox</a></li>
+
+								
+								<li><a class="dropdown-item d-flex border-block-end" href="index3.html"><i
+											class="ti ti-wallet fs-18 me-2"></i>Bal: $7,12,950</a></li>
+								
+								<li><a class="dropdown-item d-flex" href="signin.html"><i
+											class="ti ti-logout fs-18 me-2"></i>Log Out</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End::Profile- -->
+
+                    	<!-- Start::  dark mode-->
+					<div class="header-element header-theme-mode">
+						
+						<a href="javascript:void(0);" class="header-link layout-setting">
+							<span class="light-layout">
+								
+								<i class="ri-moon-line header-link-icon"></i>
+								
+							</span>
+							<span class="dark-layout">
+								
+								<i class="ri-sun-line header-link-icon"></i>
+								
+							</span>
+						</a>
+						
+					</div>
+					<!-- End:: dark mode -->
+
+				</div>
+				<!-- End::header-content-right -->
+
+			</div>
+			<!-- End::main-header-container -->
+
+		</header>
+		<!-- End Main-Header -->
+
+	   <!--Sidebar nav-->
+	   <aside class="app-sidebar" id="sidebar">
+
+		<!-- Start::main-sidebar-header  done-->
+		<div class="main-sidebar-header">
+			<a href="index.html" class="header-logo">
+				<img src="build/assets/img/brand-logos/logo_1.png" alt="logo" class="main-logo desktop-logo">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="main-logo toggle-logo"> -->
+				<img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo"
+					class="main-logo desktop-dark">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="main-logo toggle-dark"> -->
+				<img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="desktop-white">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="toggle-white">  -->
+			</a>
+		</div>
+		<!-- End::main-sidebar-header -->
+
+
+
+		<!-- Start::main-sidebar -->
+		<div class="main-sidebar " id="sidebar-scroll">
+
+			<!-- Start::nav -->
+			<nav class="main-menu-container nav nav-pills flex-column sub-open">
+				<div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+						width="24" height="24" viewBox="0 0 24 24">
+						<path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+					</svg></div>
+				<ul class="main-menu">
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">Main</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="index.html" class="side-menu__item">
+							<i class="ri-home-8-line side-menu__icon"></i>
+							<span class="side-menu__label">Dashboards</span>
+						</a>
+					</li>
+
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="bi bi-card-image side-menu__icon"></i>
+							<span class="side-menu__label">Site Elements</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Site Elements</a></li>
+							<li class="slide"><a href="banner.html" class="side-menu__item">Banner Slider</a></li>
+							<li class="slide"><a href="featuredProduct.html" class="side-menu__item">Featured Products</a></li>
+							<li class="slide"><a href="blog.html" class="side-menu__item">Blogs</a></li>
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">General</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="product.html" class="side-menu__item">
+							<i class="bi bi-boxes side-menu__icon"></i>
+							<span class="side-menu__label">All Product</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="designerproduct.html" class="side-menu__item">
+							<i class="bi bi-box2 side-menu__icon"></i>
+							<span class="side-menu__label">Designer Product</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="ri-cpu-line side-menu__icon"></i>
+							<span class="side-menu__label">Product Elements</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Product Elements</a>
+							</li>
+							<li class="slide"><a href="size.html" class="side-menu__item">Size</a></li>
+							<li class="slide"><a href="color.html" class="side-menu__item">Color</a></li>
+							<li class="slide"><a href="category.html" class="side-menu__item">Category</a></li>
+							<li class="slide"><a href="stitch.html" class="side-menu__item">Stitch</a></li>
+
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="service.html" class="side-menu__item">
+							<i class="ri-list-settings-fill side-menu__icon"></i>
+							<span class="side-menu__label">Services</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="ri-file-list-3-fill side-menu__icon"></i>
+							<span class="side-menu__label">Orders</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Product Elements</a>
+							</li>
+							<li class="slide"><a href="totalorders.html" class="side-menu__item">Total Oders</a></li>
+							<li class="slide"><a href="activeorder.html" class="side-menu__item">Active Orders</a></li>
+							<li class="slide"><a href="completedorder.html" class="side-menu__item">Completed Orders</a></li>
+							<li class="slide"><a href="Returnorder.html" class="side-menu__item">Return Orders</a></li>
+							<li class="slide"><a href="cancelledorder.html" class="side-menu__item">Cancelled Orders</a></li>
+
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">Others</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="designer.html" class="side-menu__item">
+							<i class="bi bi-person-square side-menu__icon"></i>
+							<span class="side-menu__label">Designers</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="customers.html" class="side-menu__item">
+							<i class="bi bi-people-fill side-menu__icon"></i>
+							<span class="side-menu__label">Customers</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="#" class="side-menu__item">
+							<i class="bi bi-person-circle side-menu__icon"></i>
+							<span class="side-menu__label"> Profile</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="#" class="side-menu__item">
+							<i class="bi bi-box-arrow-right side-menu__icon"></i>
+							<span class="side-menu__label">Logout</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+
+
+
+
+				</ul>
+				<div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+						width="24" height="24" viewBox="0 0 24 24">
+						<path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+					</svg></div>
+			</nav>
+			<!-- End::nav -->
+
+		</div>
+		<!-- End::main-sidebar -->
+
+	</aside>
+	<!-- End Main-Sidebar-->
+
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                <!-- Page Header -->
+                <div class="d-md-flex d-block align-items-center justify-content-between my-4 page-header-breadcrumb">
+                    <h1 class="page-title fw-medium fs-24 mb-0">Urbana Dashboard</h1>
+                    <div class="ms-md-1 ms-0">
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item"><a href="index2.html">Home</a></li>
+                                <li class="breadcrumb-item active d-inline-flex" aria-current="page">Ecommerce Dashboard
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div class="d-flex align-items-center justify-content-center ecommerce-icon px-0">
+                                        <span class="rounded p-3 bg-primary-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white primary"
+                                                height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                <path
+                                                    d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="ms-1">
+                                        <div class="mb-1">Current Month Orders</div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                40
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Increase by <span
+                                                    class="text-success mx-1">+4.2%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div
+                                        class="d-flex align-items-center justify-content-center ecommerce-icon secondary  px-0">
+                                        <span class="rounded p-3 bg-secondary-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white secondary"
+                                                enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+                                                width="24px" fill="#000000">
+                                                <g>
+                                                    <rect fill="none" height="24" width="24"></rect>
+                                                    <path
+                                                        d="M18,6h-2c0-2.21-1.79-4-4-4S8,3.79,8,6H6C4.9,6,4,6.9,4,8v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8C20,6.9,19.1,6,18,6z M12,4c1.1,0,2,0.9,2,2h-4C10,4.9,10.9,4,12,4z M18,20H6V8h2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V8h4v2c0,0.55,0.45,1,1,1s1-0.45,1-1V8 h2V20z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1">Current Month Sales</div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                10
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Decreased by <span
+                                                    class="text-success mx-1">-1.41%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div
+                                        class="d-flex align-items-center justify-content-center ecommerce-icon danger px-0">
+                                        <span class="rounded p-3 bg-danger-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white danger"
+                                                height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                                <path d="M0 0h24v24H0V0z" fill="none" />
+                                                <path
+                                                    d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 10c2.7 0 5.8 1.29 6 2H6c.23-.72 3.31-2 6-2m0-12C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1">Current Month Visitors</div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                1,368
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Decreased by <span
+                                                    class="text-danger mx-1">-7.6%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div
+                                        class="d-flex align-items-center justify-content-center ecommerce-icon warning px-0">
+                                        <span class="rounded p-3 bg-warning-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white warning"
+                                                height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                <path
+                                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1">Current Month Income</div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                ₹9,270
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Increased by <span
+                                                    class="text-success mx-1">+2.58%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div
+                                        class="d-flex align-items-center justify-content-center ecommerce-icon info  px-0">
+                                        <span class="rounded p-3 bg-info-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white info"
+                                                enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24"
+                                                width="24px" fill="#000000">
+                                                <path d="M0,0h24v24H0V0z" fill="none" />
+                                                <g>
+                                                    <path
+                                                        d="M19.5,3.5L18,2l-1.5,1.5L15,2l-1.5,1.5L12,2l-1.5,1.5L9,2L7.5,3.5L6,2v14H3v3c0,1.66,1.34,3,3,3h12c1.66,0,3-1.34,3-3V2 L19.5,3.5z M15,20H6c-0.55,0-1-0.45-1-1v-1h10V20z M19,19c0,0.55-0.45,1-1,1s-1-0.45-1-1v-3H8V5h11V19z" />
+                                                    <rect height="2" width="6" x="9" y="7" />
+                                                    <rect height="2" width="2" x="16" y="7" />
+                                                    <rect height="2" width="6" x="9" y="10" />
+                                                    <rect height="2" width="2" x="16" y="10" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1">Active Customer </div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                100
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Decreased by <span
+                                                    class="text-success mx-1">-14.9%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-md-6 col-xxl-2">
+                        <div class="card custom-card">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <div
+                                        class="d-flex align-items-center justify-content-center ecommerce-icon success  px-0">
+                                        <span class="rounded p-3 bg-success-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-white success"
+                                                height="24px" viewBox="0 0 24 24" width="24px" fill="#000000">
+                                                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                                <path
+                                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="">
+                                        <div class="mb-1">Total Products</div>
+                                        <div class="text-muted mb-1 fs-12">
+                                            <span class="text-default fw-semibold fs-20 lh-1 vertical-bottom">
+                                                280
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <span class="fs-12 mb-0">Increased by <span
+                                                    class="text-success mx-1">1.31%</span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+                <!-- Start:: row-2 -->
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6">
+                        <div class="card custom-card recent-transactions-card overflow-hidden">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">Recent Orders</div>
+                                <button type="button" class="btn btn-outline-light btn-sm"><a href="activeorder.html">View More</a></button>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group">
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/1.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Kurta
+                                                                    Set</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Kurta</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">&#8377
+                                                                599.99</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/2.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Printed
+                                                                    full Gown</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Topwear</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">&#8377
+                                                                345.00</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/3.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Banarsi
+                                                                    Kurta</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Lehenga</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">&#8377
+                                                                649.29</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/4.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Shirt
+                                                                    with Skirt</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Blouse</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">
+                                                                &#8377 699.00</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/6.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Red
+                                                                    kurta set</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Clothing</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">&#8377
+                                                                549.29</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="javascript:void(0);" class="border-0">
+                                        <div class="list-group-item border-0">
+                                            <div class="d-flex align-items-start">
+                                                <img src="build/assets/img/ecommerce/jpg/5.jpg" alt="img"
+                                                    class="avatar avatar-sm">
+                                                <div class="w-100">
+                                                    <div class="d-flex align-items-top justify-content-between">
+                                                        <div class="mt-0 ms-2">
+                                                            <p class="mb-0 fw-semibold"><span class="me-3 fs-14">Puff
+                                                                    sleeve white short dress</span></p>
+                                                            <span class="mb-0 fs-12 text-muted">Ruffle dress</span>
+                                                        </div>
+                                                        <div class="text-muted fs-12 text-center"></div>
+                                                        <span class="ms-auto">
+                                                            <span
+                                                                class="text-end text-success d-block fs-14 fw-semibold">
+                                                                &#8377 429.99</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Top Customers
+                                </div>
+                                <button type="button" class="btn btn-outline-light btn-sm"><a href="customers.html">View More</a></button>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/4.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Emma Wilson</p>
+                                                        <p class="mb-0 text-muted fs-12">18 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">$1,835</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/15.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Robert Lewis</p>
+                                                        <p class="mb-0 text-muted fs-12">18 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">$2,415</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/5.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Angelina Hose</p>
+                                                        <p class="mb-0 text-muted fs-12">21 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">$2,341</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/3.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Hugh Jackma</p>
+                                                        <p class="mb-0 text-muted fs-12">20 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">2,341</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-3">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/2.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Samantha Sam</p>
+                                                        <p class="mb-0 text-muted fs-12">24 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">2,624</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-0">
+                                        <a href="javascript:void(0);">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="d-flex align-items-top justify-content-center">
+                                                    <div class="me-2">
+                                                        <span class="avatar avatar-sm avatar-rounded">
+                                                            <img src="build/assets/img/users/12.jpg" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw-semibold">Bickle Bob</p>
+                                                        <p class="mb-0 text-muted fs-12">12 Purchases<i
+                                                                class="bi bi-patch-check-fill fs-14 text-primary ms-2"></i>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-14">1,100</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-12   col-xl-12">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between flex-wrap">
+                                <div class="card-title">
+                                    Order
+                                </div>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">1W</button>
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">2W</button>
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">1M</button>
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">3M</button>
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">6M</button>
+                                    <button type="button" class="btn btn-primary-light btn-sm btn-wave">1Y</button>
+
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div id="chart" class="p-3"></div>
+                            </div>
+                        </div>
+                        <!-- <div id="chart"></div> -->
+                    </div>
+                    <script>
+                        var dates = [
+                            [new Date('2023-07-20').getTime(), 1], 
+                            [new Date('2023-07-21').getTime(), 12], 
+                            [new Date('2023-07-22').getTime(), 3], 
+                            [new Date('2023-07-23').getTime(), 4], 
+                            [new Date('2023-07-24').getTime(), 5], 
+                            [new Date('2023-07-25').getTime(), 14], 
+                            [new Date('2023-07-26').getTime(), 15], 
+                            [new Date('2023-07-27').getTime(), 12], 
+                            [new Date('2023-07-28').getTime(), 23], 
+                            [new Date('2023-07-29').getTime(), 16], 
+                            [new Date('2023-07-30').getTime(), 18],
+                            [new Date('2023-07-31').getTime(), 0],
+                            [new Date('2023-08-1').getTime(), 27],
+                            [new Date('2023-08-2').getTime(), 11],
+
+                        ];
+
+
+                        var options = {
+                            series: [{
+                                name: 'XYZ MOTORS',
+                                data: dates
+                            }],
+                            chart: {
+                                type: 'area',
+                                stacked:true,
+                                height: 350,
+                                zoom: {
+                                    type: 'x',
+                                    enabled: true,
+                                    autoScaleYaxis: true
+                                },
+                                toolbar: {
+                                    autoSelected: 'zoom'
+                                }
+                            },
+                            dataLabels: {
+                                enabled: true
+                            },
+                            markers: {
+                                size: 0,
+                            },
+                            title: {
+                                text: 'Orders Per Day',
+                                align: 'left'
+                            },
+                            fill: {
+                                type: 'gradient',
+                                gradient: {
+                                    shadeIntensity: 1,
+                                    inverseColors: false,
+                                    opacityFrom: 0.5,
+                                    opacityTo: 0,
+                                    stops: [0, 90, 100]
+                                },
+                            },
+                            yaxis: {
+                                labels: {
+                                    formatter: function (val) {
+                                        return (val ).toFixed(0);
+                                    },
+                                },
+                                title: {
+                                    text: 'Orders'
+                                },
+                            },
+                            xaxis: {
+                                type: 'datetime',
+                            },
+                            tooltip: {
+                                shared: false,
+                                y: {
+                                    formatter: function (val) {
+                                        return (val ).toFixed(0)
+                                    }
+                                }
+                            }
+                        };
+
+                        var chart = new ApexCharts(document.querySelector("#chart"), options);
+                        chart.render();
+
+
+
+                    </script>
+
+
+
+
+                </div>
+                <!-- End:: row-2 -->
+
+                <!-- Start:: row-3 -->
+                <div class="row">
+                    <div class="col-xxl-5 ">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between d-sm-flex d-block">
+                                <div class="card-title">
+                                    Orders
+                                </div>
+                                <div>
+                                    <ul class="nav nav-tabs justify-content-end nav-tabs-header mb-0 d-sm-flex d-block mt-sm-0 mt-2"
+                                        role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" role="tab"
+                                                aria-current="page" href="#active-orders" aria-selected="true">Active
+                                                Orders</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                href="#completed-orders" aria-selected="true">Completed</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" role="tab" aria-current="page"
+                                                href="#cancelled-orders" aria-selected="true">Cancelled</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="tab-content">
+                                    <div class="tab-pane show active text-muted border-0 p-0" id="active-orders"
+                                        role="tabpanel">
+                                        <div class="table-responsive  orader-table">
+                                            <table class="table card-table table-vcenter text-nowrap mb-0">
+                                                <tbody class="active-tab">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/2.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Lisa Rebecca</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1,199.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Delivery Date</span>
+                                                                <p class="mb-0">24 May 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/6.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/13.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Matt Martin</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$799.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Delivery Date</span>
+                                                                <p class="mb-0">18 Nov 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/7.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/7.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Mitchell Osama</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$279.00</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Delivery Date</span>
+                                                                <p class="mb-0">29 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/8.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/12.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Cornor Mcgood</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$79.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Delivery Date</span>
+                                                                <p class="mb-0">05 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/9.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/15.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Kishan Patel</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1449.29</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Delivery Date</span>
+                                                                <p class="mb-0">20 Nov 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/10.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane text-muted border-0 p-0" id="completed-orders" role="tabpanel">
+                                        <div class="table-responsive  orader-table">
+                                            <table class="table card-table table-vcenter text-nowrap mb-0">
+                                                <tbody class="active-tab">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/2.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Lisa Rebecca</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1,199.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-success">Delivered On</span>
+                                                                <p class="mb-0">24 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/6.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/13.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Matt Martin</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$799.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-success">Delivered On</span>
+                                                                <p class="mb-0">18 Nov 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/7.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/7.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Mitchell Osama</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$279.00</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-success">Delivery On</span>
+                                                                <p class="mb-0">29 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/8.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/12.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Cornor Mcgood</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$79.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-success">Delivered On</span>
+                                                                <p class="mb-0">05 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/9.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/15.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Kishan Patel</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1449.29</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-success">Delivered On</span>
+                                                                <p class="mb-0">20 Nov 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/10.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane text-muted border-0 p-0" id="cancelled-orders" role="tabpanel">
+                                        <div class="table-responsive  orader-table">
+                                            <table class="table card-table table-vcenter text-nowrap mb-0">
+                                                <tbody class="active-tab">
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/6.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Hailey Bobber</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$199.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-danger">Cancelled Date</span>
+                                                                <p class="mb-0">09 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/11.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/14.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Anthony Mansion</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$179.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-danger">Cancelled Date</span>
+                                                                <p class="mb-0">28 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/12.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/16.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Simon Carter</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$149.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-danger">Cancelled Date</span>
+                                                                <p class="mb-0">30 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/1.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs online avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/3.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Sofia Sekh</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1439.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-danger">Cancelled Date</span>
+                                                                <p class="mb-0">03 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/4.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex align-items-center">
+                                                                <div class="lh-1">
+                                                                    <span
+                                                                        class="avatar avatar-xs offline avatar-rounded me-2">
+                                                                        <img src="build/assets/img/users/9.jpg" alt="">
+                                                                    </span>
+                                                                </div>
+                                                                <div class="align-items-center">
+                                                                    <span class="fs-12 text-muted">Name</span>
+                                                                    <p class="mb-0">Kimura Kai</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-muted">Price</span>
+                                                                <p class="mb-0 fw-semibold">$1092.99</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="align-items-center">
+                                                                <span class="fs-12 text-danger">Cancelled Date</span>
+                                                                <p class="mb-0">02 Dec 2022</p>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <span class="avatar avatar-xs">
+                                                                <img src="build/assets/img/ecommerce/products/5.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </td>
+                                                       
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header  justify-content-between">
+                                <div class="card-title">Top Selling Products</div>
+                                <button type="button" class="btn btn-outline-light btn-sm"><a href="product.html">View More</a></button>
+
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table text-nowrap mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Product</th>
+                                                <th scope="col">Stock</th>
+                                                <th scope="col">Total Sales</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="top-selling">
+                                            <tr>
+                                                <td class="text-center lh-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md">
+                                                            <img src="build/assets/img/ecommerce/products/13.png"
+                                                                class="p-2 rounded-pill bg-light" alt="">
+                                                        </span>
+                                                        <span class="ms-1">Ethnic School bag for children (24L)</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class=" text-success">In Stock</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-semibold">5,093</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center lh-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md">
+                                                            <img src="build/assets/img/ecommerce/products/14.png"
+                                                                class="p-2 rounded-pill bg-light" alt="">
+                                                        </span>
+                                                        <span class="ms-1">Leather jacket for men (S,M,L,XL)
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class=" text-success">In Stock</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-semibold">6,903</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center lh-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md">
+                                                            <img src="build/assets/img/ecommerce/products/15.png"
+                                                                class="p-2 rounded-pill bg-light" alt="">
+                                                        </span>
+                                                        <span class="ms-1">Childrens Teddy toy of high quality</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class=" text-danger">Out Of Stock</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-semibold">5,423</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center lh-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md">
+                                                            <img src="build/assets/img/ecommerce/products/16.png"
+                                                                class="p-2 rounded-pill bg-light" alt="">
+                                                        </span>
+                                                        <span class="ms-1">Orange smart watch dial (24mm)</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class=" text-danger">Out Of Stock</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-semibold">10,235</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center lh-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md">
+                                                            <img src="build/assets/img/ecommerce/products/18.png"
+                                                                class="p-2 rounded-pill bg-light" alt="">
+                                                        </span>
+                                                        <span class="ms-1">Pink Womens Regular Hand Bag </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class=" text-success">In Stock</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fw-semibold">10,235</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-6">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                                <div class="card-title">
+                                    Customer Reviews
+                                </div>
+                                <button type="button" class="btn btn-outline-light btn-sm">View More</button>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="flex-1">
+                                        <div class="d-flex align-items-baseline mb-2">
+                                            <h4 class="mb-0 text-default fs-36">4.3</h4>
+                                            <span class="ms-2">
+                                                <i class="ri-star-fill text-primary"></i>
+                                                <i class="ri-star-fill text-primary"></i>
+                                                <i class="ri-star-fill text-primary"></i>
+                                                <i class="ri-star-fill text-primary"></i>
+                                                <i class="ri-star-fill text-default op-2"></i>
+                                            </span>
+                                        </div>
+                                        <a href="javascript:void(0);" class="fs-14">1,739 Reviews</a>
+                                    </div>
+                                    <div class="min-w-fit">
+                                        <span class="fs-14">(4.3 out of 5)</span>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span class="d-block ">5 Stars</span>
+                                                <span class="d-block ">65%</span>
+                                            </div>
+                                            <div class="progress progress-animate progress-sm" role="progressbar"
+                                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-primary" style="width: 65%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span class="d-block ">4 Stars</span>
+                                                <span class="d-block ">65%</span>
+                                            </div>
+                                            <div class="progress progress-animate progress-sm" role="progressbar"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-primary" style="width: 70%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span class="d-block ">3 Stars</span>
+                                                <span class="d-block ">60%</span>
+                                            </div>
+                                            <div class="progress progress-animate progress-sm" role="progressbar"
+                                                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-primary" style="width: 60%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span class="d-block ">2 Stars</span>
+                                                <span class="d-block ">20%</span>
+                                            </div>
+                                            <div class="progress progress-animate progress-sm" role="progressbar"
+                                                aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-primary" style="width: 20%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-fill">
+                                            <div class="d-flex align-items-center justify-content-between mb-1">
+                                                <span class="d-block ">1 Star</span>
+                                                <span class="d-block ">5%</span>
+                                            </div>
+                                            <div class="progress progress-animate progress-sm" role="progressbar"
+                                                aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">
+                                                <div class="progress-bar bg-primary" style="width: 5%"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-3 -->
+
+                <!-- Start:: row-4 -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="card custom-card">
+                            <div class="card-header justify-content-between">
+                               
+                                    <div class="card-title">Products Overview</div>
+                                    <button type="button" class="btn btn-outline-light btn-sm"><a href="product.html">View More</a></button>
+
+                              
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <style>
+                                        ::-webkit-scrollbar {
+                                            width: 0px;
+                                            height: 10px;
+                                        }
+
+                                        ::-webkit-scrollbar-thumb {
+                                            background-color: #70f5b2;
+                                        }
+
+                                        ::-webkit-scrollbar-thumb:hover {
+                                            background-color: #89ecba;
+                                        }
+                                    </style>
+                                    <table class="table text-nowrap table-bordered" style="overflow: scroll">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Product Name</th>
+                                               
+                                                <th scope="col">Price</th>
+                                                <th scope="col">Payment Method</th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Sales</th>
+                                                <th scope="col">Revenue</th>
+                                                <th scope="col">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="">01-05-23</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2 lh-1">
+                                                            <span class="avatar avatar-sm">
+                                                                <img src="build/assets/img/ecommerce/products/13.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="fs-14">Niker College Bag</div>
+                                                    </div>
+                                                </td>
+                                 
+                                                <td>
+                                                    $199.99
+                                                </td>
+                                                <td>
+                                                    <span>Online</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-success-transparent">Available</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">3,903</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">$67,899.24</span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-list">
+                                                       
+                                                        <a href="product-edit.html"
+                                                            
+                                                            class="btn  btn-icon rounded-pill btn-secondary-light"><i
+                                                                class="ti ti-pencil"></i></a>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="">02-05-23</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2 lh-1">
+                                                            <span class="avatar avatar-sm">
+                                                                <img src="build/assets/img/ecommerce/products/17.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="fs-14">Dslr Camera (50mm f/1.9 HRM Lens)</div>
+                                                    </div>
+                                                </td>
+                                               
+                                                <td>
+                                                    $1,299.99
+                                                </td>
+                                                <td>
+                                                    <span>Cash On Delivery</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-success-transparent">Available</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">12,435</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">$3,24,781.92</span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-list">
+                                                       
+                                                        <a href="product-edit.html"
+                                                            
+                                                            class="btn  btn-icon rounded-pill btn-secondary-light"><i
+                                                                class="ti ti-pencil"></i></a>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="">03-05-23</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2 lh-1">
+                                                            <span class="avatar avatar-sm">
+                                                                <img src="build/assets/img/ecommerce/products/14.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="fs-14">Outdoor Bomber Jacket</div>
+                                                    </div>
+                                                </td>
+                                         
+                                                <td>
+                                                    $99.99
+                                                </td>
+                                                <td>
+                                                    <span>Cash On Delivery</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-danger-transparent">Not Available</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">5,143</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">$76,102.76</span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-list">
+                                                     
+                                                        <a href="product-edit.html"
+                                                            
+                                                            class="btn  btn-icon rounded-pill btn-secondary-light"><i
+                                                                class="ti ti-pencil"></i></a>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="">04-05-23</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2 lh-1">
+                                                            <span class="avatar avatar-sm">
+                                                                <img src="build/assets/img/ecommerce/products/15.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="fs-14">Light Blue Teddy</div>
+                                                    </div>
+                                                </td>
+                                            
+                                                <td>
+                                                    $79.00
+                                                </td>
+                                                <td>
+                                                    <span>Online</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-warning-transparent">Limited Deal</span>
+                                                </td>
+                                                <td>
+                                                    <span class=""> 7,183</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">$78,211.83</span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-list">
+                                                       
+                                                        <a href="product-edit.html"
+                                                            
+                                                            class="btn  btn-icon rounded-pill btn-secondary-light"><i
+                                                                class="ti ti-pencil"></i></a>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="">05-05-23</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="me-2 lh-1">
+                                                            <span class="avatar avatar-sm">
+                                                                <img src="build/assets/img/ecommerce/products/16.png"
+                                                                    alt="">
+                                                            </span>
+                                                        </div>
+                                                        <div class="fs-14">Orange Smart Watch (24mm)</div>
+                                                    </div>
+                                                </td>
+                                         
+                                                <td>
+                                                    $199.99
+                                                </td>
+                                                <td>
+                                                    <span>Cash On Delivery</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge bg-primary-transparent">In Offer</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">10,287</span>
+                                                </td>
+                                                <td>
+                                                    <span class="">$2,32,982.99</span>
+                                                </td>
+                                                <td>
+                                                    <div class="btn-list">
+                                                    
+                                                        <a href="javascript:void(0);"class="btn  btn-icon rounded-pill btn-secondary-light"><i
+                                                                class="ti ti-pencil"></i></a>
+                                                        
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- End:: row-4 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+
+        <!-- Country-selector modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent"
+                                id="Search-Grid"><i class="ri ri-search-2-line header-link-icon fs-14"></i></a>
+                            <input type="search" class="form-control form-control-sm border-0 px-2" placeholder="Search"
+                                aria-label="Username">
+                            
+                         
+                        </div>
+                   
+                        <div class="my-4">
+                            <p class="fw-semibold text-muted mb-2">Recent Search :</p>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                                <a href="notifications.html"><span>Notifications</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                                <a href="alerts.html"><span>Alerts</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
+                                <a href="inbox.html"><span>Mail</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group ms-auto">
+                            <button class="btn btn-sm btn-primary-light">Search</button>
+                            <button class="btn btn-sm btn-primary">Clear Recents</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Country-selector modal -->
+
+        <!-- Footer opened -->
+        <footer class="footer mt-auto py-3 bg-white text-center">
+            <div class="container">
+                <span class="text-center">Copyright © <span id="year">2023</span>
+                    <a href="https://www.urbanacloset.com/" class="text-primary"> Urbanacloset</a>. Designed with <span
+                        class="ri ri-heart-fill text-danger"></span> by
+                    <a class="text-primary" href="https://arizonamediaz.com/"> Arizonamediaz</a> All rights reserved </span>
+            </div>
+        </footer> <!-- End Footer -->
+
+
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- Scroll To Top -->
+    <div class="scrollToTop">
+        <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
+    <!-- Scroll To Top -->
+
+    <!-- Popper JS -->
+    <script src="build/assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Node Waves JS-->
+    <script src="build/assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Simplebar JS -->
+    <script src="build/assets/libs/simplebar/simplebar.min.js"></script>
+    <link rel="modulepreload" href="build/assets/simplebar-B35Aj-bA.js" />
+    <script type="module" src="build/assets/simplebar-B35Aj-bA.js"></script>
+    <!-- Color Picker JS -->
+    <script src="build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+
+
+    <!-- Apex Charts JS -->
+    <script src="build/assets/libs/apexcharts/apexcharts.min.js"></script>
+
+
+
+    <!-- Sticky JS -->
+    <script src="build/assets/sticky.js"></script>
+
+    <!-- Custom-Switcher JS -->
+    <link rel="modulepreload" href="build/assets/custom-switcher-oPg2q12r.js" />
+    <script type="module" src="build/assets/custom-switcher-oPg2q12r.js"></script>
+    <!-- APP JS-->
+    <link rel="modulepreload" href="build/assets/app-DhXvUdFt.js" />
+    <script type="module" src="build/assets/app-DhXvUdFt.js"></script>
+    <!-- END SCRIPTS -->
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light"
+	data-menu-styles="dark" data-toggled="close">
+
+<head>
+
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+	<!-- TITLE -->
+	<title>Edit Blog </title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="build/assets/img/brand-logos/logo_1.png" type="image/x-icon">
+
+	<!-- ICONS CSS -->
+	<link href="build/assets/icon-fonts/icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+	<!-- Choices JS -->
+	<script src="build/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+	<!-- Bootstrap Css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<link rel="preload" as="style" href="build/assets/app-C3rLMrk5.css" />
+	<link rel="stylesheet" href="build/assets/app-C3rLMrk5.css" />
+	<!-- Main Theme Js -->
+	<script src="build/assets/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/quill@2.0.0/dist/quill.snow.css" rel="stylesheet" />
+</head>
+
+<body class="">
+
+	<div class="page">
+
+		<!-- Main-Header -->
+		<header class="app-header">
+
+			<!-- Start::main-header-container -->
+			<div class="main-header-container container-fluid">
+
+				<!-- Start::header-content-left -->
+				<div class="header-content-left">
+
+
+					<!-- Start::header-element -->
+					<div class="header-element">
+						<!-- Start::header-link -->
+						<div class="">
+							<a class="sidebar-toggle sidemenu-toggle header-link" data-bs-toggle="sidebar"
+								href="javascript:void(0);">
+								<span class="sr-only">Toggle Navigation</span>
+								<i class="bi bi-list header-icon"></i>
+							</a>
+						</div>
+						<a aria-label="Hide Sidebar"
+							class="sidemenu-toggle header-link animated-arrow hor-toggle horizontal-navtoggle"
+							data-bs-toggle="sidebar" href="javascript:void(0);"><span></span></a>
+						<!-- End::header-link -->
+					</div>
+					<!-- End::header-element -->
+
+
+				</div>
+				<!-- End::header-content-left -->
+
+				<!-- Start::header-content-right -->
+				<div class="header-content-right">
+
+
+					<!-- Start::header-element -->
+					<!-- lang -->
+					<!-- End::header-element -->
+
+					<!-- Start::header-element -->
+					<div class="header-element header-search">
+						<!-- Start::header-link -->
+						<a href="javascript:void(0);" class="header-link" data-bs-toggle="modal"
+							data-bs-target="#searchModal">
+							<i class="ri-search-2-line header-link-icon"></i>
+						</a>
+						<!-- End::header-link -->
+					</div>
+					<!-- End::header-element -->
+
+					<!-- Start::header-element  dark mode-->
+					<div class="header-element header-theme-mode">
+						<!-- Start::header-link|layout-setting -->
+						<a href="javascript:void(0);" class="header-link layout-setting">
+							<span class="light-layout">
+								<!-- Start::header-link-icon -->
+								<i class="ri-moon-line header-link-icon"></i>
+								<!-- End::header-link-icon -->
+							</span>
+							<span class="dark-layout">
+								<!-- Start::header-link-icon -->
+								<i class="ri-sun-line header-link-icon"></i>
+								<!-- End::header-link-icon -->
+							</span>
+						</a>
+						<!-- End::header-link|layout-setting -->
+					</div>
+					<!-- End::header-element -->
+
+					<!-- Start::header-element ------ temp cloed-->
+					<!-- <div class="header-element header-fullscreen">
+								
+									<a onclick="openFullscreen();" href="javascript:void(0);" class="header-link">
+										<i class="ri-fullscreen-line full-screen-open header-link-icon"></i>
+										<i class="ri-fullscreen-line full-screen-close header-link-icon d-none"></i>
+									</a>
+									
+								</div> -->
+					<!-- End::header-element -->
+
+					<!-- Start::header-element ORDERSSSS -->
+					<div class="header-element cart-dropdown">
+						<!-- Start::header-link|dropdown-toggle -->
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-auto-close="outside"
+							data-bs-toggle="dropdown">
+							<i class="ri-shopping-basket-line  header-link-icon"></i>
+							<span class="badge bg-danger rounded-pill header-icon-badge" id="cart-icon-badge">
+								4
+							</span>
+						</a>
+						<!-- End::header-link|dropdown-toggle -->
+						<!-- Start::main-header-dropdown   -->
+						<div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center justify-content-between">
+									<p class="mb-0 fs-15 fw-semibold">Orders</p>
+									<span class="badge badge-light-2" id="cart-data">4 Items</span>
+								</div>
+							</div>
+							<div>
+								<hr class="dropdown-divider">
+							</div>
+							<ul class="list-unstyled mb-0" id="header-cart-items-scroll">
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/1.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="cart.html">Black Heals For Women</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$699</li>
+													<li class="text-decoration-line-through text-muted">$999</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/2.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="cart.html">Tshirt For Men</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item">
+													<li>$245</li>
+													<li><span
+															class="text-decoration-line-through text-muted">$599</span>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/9.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="cart.html">Travel Bag For Womens</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$299</li>
+													<li class="text-decoration-line-through text-muted">$399</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item border-bottom-0">
+									<div class="d-flex align-items-start cart-dropdown-item">
+										<img src="build/assets/img/ecommerce/products/10.png" alt="img"
+											class="avatar avatar  br-5 me-3 p-2 bg-gray-100">
+										<div class="flex-grow-1">
+											<div class="d-flex align-items-start justify-content-between mb-0">
+												<div class="mb-0 fs-14 text-default fw-medium">
+													<a href="cart.html">Leather Wallet For Grils</a>
+												</div>
+												<div>
+													<a href="javascript:void(0);"
+														class="header-cart-remove float-end dropdown-item-close"><i
+															class="ri-close-circle-line"></i></a>
+												</div>
+											</div>
+											<div
+												class="min-w-fit-content d-flex align-items-start justify-content-between">
+												<ul class="header-product-item d-flex">
+													<li>$100</li>
+													<li class="text-decoration-line-through text-muted">$150</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+
+							<div class="p-3 empty-header-item border-top">
+								<div class="d-grid">
+									<a href="checkout.html" class="btn btn-primary">View Orders</a>
+								</div>
+							</div>
+
+
+							<!-- if there is no order  -->
+							<div class="p-5 empty-item d-none">
+								<div class="text-center">
+									<span class="avatar avatar-xxl avatar-rounded bg-primary-transparent">
+										<i class="ri-shopping-cart-2-line fs-2"></i>
+									</span>
+									<h6 class="fw-bold mb-1 mt-3">No Orders In Cart</h6>
+									<span class="mb-3 fw-normal fs-13 d-block">When you have Orders added here , they
+										will appear here.</span>
+
+								</div>
+							</div>
+
+						</div>
+						<!-- End::main-header-dropdown -->
+					</div>
+					<!-- End::header-element -->
+
+					<!-- Start::header-element  Notificton-->
+					<div class="header-element notifications-dropdown">
+						<!-- Start::header-link|dropdown-toggle -->
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" data-bs-toggle="dropdown"
+							data-bs-auto-close="outside" id="messageDropdown" aria-expanded="false">
+							<i class="ri-notification-2-line header-link-icon animate-bell"></i>
+							<span class="badge bg-success rounded-pill header-icon-badge pulse pulse-success"
+								id="notification-icon-badge">4</span>
+						</a>
+						<!-- End::header-link|dropdown-toggle -->
+						<!-- Start::main-header-dropdown -->
+						<div class="main-header-dropdown dropdown-menu dropdown-menu-end" data-popper-placement="none">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center justify-content-between">
+									<p class="mb-0 fs-15 fw-semibold">Notifications</p>
+									<span class="badge badge-light-2" id="notifiation-data">Mark All Read</span>
+								</div>
+							</div>
+							<div class="dropdown-divider"></div>
+							<ul class="list-unstyled mb-0" id="header-notification-scroll">
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<a href="mail-inbox.html" class="stretched-link text-danger"
+											style="position: relative;"></a>
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/17.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="mail-inbox.html">Elon Isk</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Hello
+													there! How are you doing? Call me when...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">2 min</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/2.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="mail-inbox.html">Shakira Sen</a>
+												</p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">I
+													would like to discuss about that assets...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">09:43</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/21.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="mail-inbox.html">Sebastian</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Shall
+													we go to the cafe at downtown...</span>
+												<p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="dropdown-item">
+									<div class="d-flex align-items-start">
+										<div class="pe-2">
+											<span class="avatar avatar-sm">
+												<img src="build/assets/img/users/11.jpg" alt="img" class="rounded-sm">
+											</span>
+										</div>
+										<div class="flex-grow-1 d-flex align-items-center justify-content-between">
+											<div>
+												<p class="mb-0 fw-semibold"><a href="mail-inbox.html">Charlie
+														Davieson</a></p>
+												<span
+													class="text-muted fw-normal fs-12 header-notification-text text-truncate">Lorem
+													ipsum dolor sit amet, consectetur</span>
+												<p class="mb-0 text-muted fw-normal fs-12">yesterday</p>
+											</div>
+											<div>
+												<a href="javascript:void(0);"
+													class="min-w-fit-content text-muted me-1 dropdown-item-close1"><i
+														class="ri-close-circle-line fs-16 op-8"></i></a>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="p-3 empty-header-item1 border-top">
+								<div class="d-grid">
+									<a href="mail-inbox.html" class="btn btn-primary">View All</a>
+								</div>
+							</div>
+							<div class="p-5 empty-item1 d-none">
+								<div class="text-center">
+									<span class="avatar avatar-xl avatar-rounded bg-secondary-transparent">
+										<i class="ri-notification-off-line fs-2"></i>
+									</span>
+									<h6 class="fw-semibold mt-3">No New Notifications</h6>
+								</div>
+							</div>
+						</div>
+						<!-- End::main-header-dropdown -->
+					</div>
+					<!-- End::header-element -->
+
+
+
+
+					<!-- Start::header-element    Profile-->
+					<div class="header-element">
+						<!-- Start::header-link|dropdown-toggle -->
+						<a href="javascript:void(0);" class="header-link dropdown-toggle" id="mainHeaderProfile"
+							data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+							<div class="d-flex align-items-center">
+								<div class="">
+									<img src="build/assets/img/users/1.jpg" alt="img" width="30" height="30"
+										class="rounded-circle">
+								</div>
+							</div>
+						</a>
+						<!-- End::header-link|dropdown-toggle -->
+						<div class="main-header-dropdown dropdown-menu pt-0 overflow-hidden header-profile-dropdown dropdown-menu-end"
+							aria-labelledby="mainHeaderProfile">
+							<div class="header-dropdown bg-primary text-fixed-white rounded-top">
+								<div class="d-flex align-items-center">
+									<div class="me-sm-2 me-0 avatar">
+										<img src="build/assets/img/users/1.jpg" alt="img" class="rounded-circle">
+									</div>
+									<div class="d-sm-block d-none">
+										<p class="fw-semibold mb-0 lh-1">Json Taylor</p>
+										<span class="op-7 fw-medium d-block fs-12">Web Designer</span>
+									</div>
+								</div>
+							</div>
+							<div class="dropdown-divider mb-0"></div>
+							<ul class="list-unstyled mb-0">
+								<li><a class="dropdown-item d-flex" href="profile.html"><i
+											class="ti ti-user-circle fs-18 me-2"></i>Profile</a></li>
+								<li><a class="dropdown-item d-flex" href="mail-inbox.html"><i
+											class="ti ti-inbox fs-18 me-2"></i>Inbox</a></li>
+
+								<li><a class="dropdown-item d-flex" href="mail-settings.html"><i
+											class="ti ti-adjustments-horizontal fs-18 me-2"></i>Settings</a></li>
+								<li><a class="dropdown-item d-flex border-block-end" href="index3.html"><i
+											class="ti ti-wallet fs-18 me-2"></i>Bal: $7,12,950</a></li>
+								<li><a class="dropdown-item d-flex" href="chat.html"><i
+											class="ti ti-headset fs-18 me-2"></i>Support</a></li>
+								<li><a class="dropdown-item d-flex" href="signin.html"><i
+											class="ti ti-logout fs-18 me-2"></i>Log Out</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- End::header-element -->
+
+					<!-- Start::header-element sarter -->
+
+					<!-- End::header-element -->
+
+				</div>
+				<!-- End::header-content-right -->
+
+			</div>
+			<!-- End::main-header-container -->
+
+		</header>
+		<!-- End Main-Header -->
+
+	   <!--Sidebar nav-->
+	   <aside class="app-sidebar" id="sidebar">
+
+		<!-- Start::main-sidebar-header  done-->
+		<div class="main-sidebar-header">
+			<a href="index.html" class="header-logo">
+				<img src="build/assets/img/brand-logos/logo_1.png" alt="logo" class="main-logo desktop-logo">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="main-logo toggle-logo"> -->
+				<img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo"
+					class="main-logo desktop-dark">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="main-logo toggle-dark"> -->
+				<img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="desktop-white">
+				<!-- <img src="build/assets/img/brand-logos/logo-light (1).png" alt="logo" class="toggle-white">  -->
+			</a>
+		</div>
+		<!-- End::main-sidebar-header -->
+
+
+
+		<!-- Start::main-sidebar -->
+		<div class="main-sidebar " id="sidebar-scroll">
+
+			<!-- Start::nav -->
+			<nav class="main-menu-container nav nav-pills flex-column sub-open">
+				<div class="slide-left" id="slide-left"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+						width="24" height="24" viewBox="0 0 24 24">
+						<path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path>
+					</svg></div>
+				<ul class="main-menu">
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">Main</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="index.html" class="side-menu__item">
+							<i class="ri-home-8-line side-menu__icon"></i>
+							<span class="side-menu__label">Dashboards</span>
+						</a>
+					</li>
+
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="bi bi-card-image side-menu__icon"></i>
+							<span class="side-menu__label">Site Elements</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Site Elements</a></li>
+							<li class="slide"><a href="banner.html" class="side-menu__item">Banner Slider</a></li>
+							<li class="slide"><a href="featuredProduct.html" class="side-menu__item">Featured Products</a></li>
+							<li class="slide"><a href="blog.html" class="side-menu__item">Blogs</a></li>
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">General</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="product.html" class="side-menu__item">
+							<i class="bi bi-boxes side-menu__icon"></i>
+							<span class="side-menu__label">All Product</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="designerproduct.html" class="side-menu__item">
+							<i class="bi bi-box2 side-menu__icon"></i>
+							<span class="side-menu__label">Designer Product</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="ri-cpu-line side-menu__icon"></i>
+							<span class="side-menu__label">Product Elements</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Product Elements</a>
+							</li>
+							<li class="slide"><a href="size.html" class="side-menu__item">Size</a></li>
+							<li class="slide"><a href="color.html" class="side-menu__item">Color</a></li>
+							<li class="slide"><a href="category.html" class="side-menu__item">Category</a></li>
+							<li class="slide"><a href="stitch.html" class="side-menu__item">Stitch</a></li>
+
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="service.html" class="side-menu__item">
+							<i class="ri-list-settings-fill side-menu__icon"></i>
+							<span class="side-menu__label">Services</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide has-sub">
+						<a href="javascript:void(0);" class="side-menu__item">
+							<i class="ri-file-list-3-fill side-menu__icon"></i>
+							<span class="side-menu__label">Orders</span>
+							<i class="ri ri-arrow-right-s-line side-menu__angle"></i>
+						</a>
+						<ul class="slide-menu child1">
+							<li class="slide side-menu__label1"><a href="javascript:void(0)">Product Elements</a>
+							</li>
+							<li class="slide"><a href="totalorders.html" class="side-menu__item">Total Oders</a></li>
+							<li class="slide"><a href="activeorder.html" class="side-menu__item">Active Orders</a></li>
+							<li class="slide"><a href="completedorder.html" class="side-menu__item">Completed Orders</a></li>
+							<li class="slide"><a href="Returnorder.html" class="side-menu__item">Return Orders</a></li>
+							<li class="slide"><a href="cancelledorder.html" class="side-menu__item">Cancelled Orders</a></li>
+
+						</ul>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide__category -->
+					<li class="slide__category"><span class="category-name">Others</span></li>
+					<!-- End::slide__category -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="designer.html" class="side-menu__item">
+							<i class="bi bi-person-square side-menu__icon"></i>
+							<span class="side-menu__label">Designers</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="customers.html" class="side-menu__item">
+							<i class="bi bi-people-fill side-menu__icon"></i>
+							<span class="side-menu__label">Customers</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="#" class="side-menu__item">
+							<i class="bi bi-person-circle side-menu__icon"></i>
+							<span class="side-menu__label"> Profile</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+					<!-- Start::slide -->
+					<li class="slide">
+						<a href="#" class="side-menu__item">
+							<i class="bi bi-box-arrow-right side-menu__icon"></i>
+							<span class="side-menu__label">Logout</span>
+						</a>
+					</li>
+					<!-- End::slide -->
+
+
+
+
+
+				</ul>
+				<div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191"
+						width="24" height="24" viewBox="0 0 24 24">
+						<path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path>
+					</svg></div>
+			</nav>
+			<!-- End::nav -->
+
+		</div>
+		<!-- End::main-sidebar -->
+
+	</aside>
+	<!-- End Main-Sidebar-->
+
+
+
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content p-0">
+            <div class="profile-container mb-4">
+                <div class="main-profile-cover" style="height: 350px;">
+                    <img src="https://trickbd.com/wp-content/uploads/2015/08/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"
+                        alt="" class="" id="profile-img2">
+                    <div class="main-profile-cover-content" >
+                        <div class="text-center mb-5">
+                            <span class="avatar avatar-rounded  me-2 mb-3 chatstatusperson">
+                                <img class="chatimageperson" src="build/assets/img/users/1.jpg" alt="img"
+                                    id="profile-img">
+                            
+                            </span>
+                            <p class="mb-1 fs-15 fw-semibold  lh-1 text-fixed-white">Anderson Itumay</p>
+                            <p class="fs-12 text-fixed-white op-8 mb-2">andersonitumay@abc.com</p>
+
+              
+                        </div>
+                        <span class="background-upload">
+                            <a href="profilesettings.html" style="color: aliceblue;"><i class="ri ri-pencil-line"></i> <span>Change Password</span></a>
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+
+                <!-- Start::row-1 -->
+                <div class="row content-top">
+                    <div class="col-xxl-12 col-xl-12">
+                        
+                        <div class="card custom-card overflow-hidden">
+
+                            <div class="card-header">
+                                <div class="card-title">Basic Information </div>
+                            </div>
+                            <div class="card-body py-2">
+                                <div class="table-responsive mb-4">
+                                    <table class="table text-nowrap table-borderless">
+                                        <tbody>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        First name
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>Anderson</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Last Name
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>Itumay</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Birthday
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>03 September 1990</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Age
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>26</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Gender
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>Female</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Joined
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>01 November 2024</td>
+                                            </tr>
+                                    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="card-header">
+                                <div class="card-title">General Info </div>
+                            </div>
+                            <div class="card-body py-2">
+                                <div class="table-responsive mb-4">
+                                    <table class="table text-nowrap table-borderless">
+                                        <tbody>
+
+                                            
+                                      
+                                       
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        City
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>Lake Park</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Country
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>Newyork</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        State
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>U.S.A</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Pin code
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>700234</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                       Address
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                    <td>address</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                      Total Orders
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>70</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                         
+
+                            <div class="card-header">
+                                <div class="card-title">Contact Information </div>
+                            </div>
+                            <div class="card-body py-2">
+                                <div class="table-responsive mb-4">
+
+                                    <table class="table text-nowrap table-borderless">
+                                        <tbody>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Personal Contact No
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>+123(45)-158-90.</td>
+                                            </tr>
+                                            <tr class="product-list">
+                                                <td>
+                                                    <div class="fw-semibold">
+                                                        Email Id
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    :
+                                                </td>
+                                                <td>andersonitumay@abc.com</td>
+                                            </tr>
+                                            
+                                        
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card custom-card">
+                                        <div class="card-header justify-content-between">
+                                            <div class="card-title">
+                                                Customer Products Overview
+                                            </div>
+                                           
+                                        </div>
+                                      
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <style>
+                                                    ::-webkit-scrollbar {
+                                                        width: 0px;
+                                                        height: 10px;
+                                                    }
+            
+                                                    ::-webkit-scrollbar-thumb {
+                                                        background-color: #70f5b2;
+                                                    }
+            
+                                                    ::-webkit-scrollbar-thumb:hover {
+                                                        background-color: #89ecba;
+                                                    }
+                                                </style>
+                                                <table class="table text-nowrap table-bordered" style="overflow: scroll">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Date</th>
+                                                            <th scope="col">Product Name</th>
+                                                            <!-- <th scope="col">Product Id</th> -->
+                                                            <!-- <th scope="col">Transaction Id</th> -->
+                                                            <th scope="col">Price</th>
+                                                            <th scope="col">Payment Method</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Sales</th>
+                                                            <th scope="col">Revenue</th>
+                                                            <th scope="col">Actions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="">01-05-23</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="me-2 lh-1">
+                                                                        <span class="avatar avatar-sm">
+                                                                            <img src="build/assets/img/ecommerce/products/13.png" alt="">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fs-14">Niker College Bag</div>
+                                                                </div>
+                                                            </td>
+                                             
+                                                            <td>
+                                                                $199.99
+                                                            </td>
+                                                            <td>
+                                                                <span>Online</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-success-transparent">Available</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">3,903</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">$67,899.24</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-list">
+                                                                   
+                                                                    <a href="orderdetails.html" class="btn  btn-icon rounded-pill btn-secondary-light"><i class="bi bi-eye"></i></a>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="">02-05-23</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="me-2 lh-1">
+                                                                        <span class="avatar avatar-sm">
+                                                                            <img src="build/assets/img/ecommerce/products/17.png" alt="">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fs-14">Dslr Camera (50mm f/1.9 HRM Lens)</div>
+                                                                </div>
+                                                            </td>
+                                                           
+                                                            <td>
+                                                                $1,299.99
+                                                            </td>
+                                                            <td>
+                                                                <span>Cash On Delivery</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-success-transparent">Available</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">12,435</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">$3,24,781.92</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-list">
+                                                                   
+                                                                    <a href="orderdetails.html" class="btn  btn-icon rounded-pill btn-secondary-light"><i class="bi bi-eye"></i></a>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="">03-05-23</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="me-2 lh-1">
+                                                                        <span class="avatar avatar-sm">
+                                                                            <img src="build/assets/img/ecommerce/products/14.png" alt="">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fs-14">Outdoor Bomber Jacket</div>
+                                                                </div>
+                                                            </td>
+                                                     
+                                                            <td>
+                                                                $99.99
+                                                            </td>
+                                                            <td>
+                                                                <span>Cash On Delivery</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-danger-transparent">Not Available</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">5,143</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">$76,102.76</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-list">
+                                                                 
+                                                                    <a href="orderdetails.html" class="btn  btn-icon rounded-pill btn-secondary-light"><i class="bi bi-eye"></i></a>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="">04-05-23</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="me-2 lh-1">
+                                                                        <span class="avatar avatar-sm">
+                                                                            <img src="build/assets/img/ecommerce/products/15.png" alt="">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fs-14">Light Blue Teddy</div>
+                                                                </div>
+                                                            </td>
+                                                        
+                                                            <td>
+                                                                $79.00
+                                                            </td>
+                                                            <td>
+                                                                <span>Online</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-warning-transparent">Limited Deal</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class=""> 7,183</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">$78,211.83</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-list">
+                                                                   
+                                                                    <a href="orderdetails.html" class="btn  btn-icon rounded-pill btn-secondary-light"><i class="bi bi-eye"></i></a>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <span class="">05-05-23</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="d-flex align-items-center">
+                                                                    <div class="me-2 lh-1">
+                                                                        <span class="avatar avatar-sm">
+                                                                            <img src="build/assets/img/ecommerce/products/16.png" alt="">
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="fs-14">Orange Smart Watch (24mm)</div>
+                                                                </div>
+                                                            </td>
+                                                     
+                                                            <td>
+                                                                $199.99
+                                                            </td>
+                                                            <td>
+                                                                <span>Cash On Delivery</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="badge bg-primary-transparent">In Offer</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">10,287</span>
+                                                            </td>
+                                                            <td>
+                                                                <span class="">$2,32,982.99</span>
+                                                            </td>
+                                                            <td>
+                                                                <div class="btn-list">
+                                                                
+                                                                    <a href="orderdetails.html" class="btn  btn-icon rounded-pill btn-secondary-light"><i class="bi bi-eye"></i></a>
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-footer">
+                                            <div class="d-flex align-items-center">
+                                                <div>
+                                                    Showing 5 Entries <i class="bi bi-arrow-right ms-2 fw-semibold"></i>
+                                                </div>
+                                                <div class="ms-auto">
+                                                    <nav aria-label="Page navigation" class="pagination-style-4">
+                                                        <ul class="pagination mb-0">
+                                                            <li class="page-item disabled">
+                                                                <a class="page-link" href="javascript:void(0);">
+                                                                    Prev
+                                                                </a>
+                                                            </li>
+                                                            <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                                                            <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                                                            <li class="page-item">
+                                                                <a class="page-link text-primary" href="javascript:void(0);">
+                                                                    next
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </nav>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--End::row-1 -->
+
+        </div>
+
+        <!-- End::app-content -->
+
+
+        <!-- Country-selector modal -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="input-group">
+                            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent"
+                                id="Search-Grid"><i class="ri ri-search-2-line header-link-icon fs-14"></i></a>
+                            <input type="search" class="form-control form-control-sm border-0 px-2" placeholder="Search"
+                                aria-label="Username">
+                            <a href="javascript:void(0);" class="input-group-text border-0 bg-transparent"
+                                id="voice-search"><i class="ri ri-mic-2-line  header-link-icon"></i></a>
+                            <a href="javascript:void(0);" class="btn btn-light btn-icon border-0 bg-transparent"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ri ri-more-2-line"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="javascript:void(0);">Action</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0);">Another action</a></li>
+                                <li><a class="dropdown-item" href="javascript:void(0);">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="javascript:void(0);">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <div class="mt-4">
+                            <p class="fw-semibold text-muted mb-2">Are You Looking For...</p>
+                            <span class="search-tags"><i class="ri ri-user-line me-2"></i>Team<a
+                                    href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i
+                                        class="fe fe-x"></i></a></span>
+                            <span class="search-tags"><i class="ri ri-file-text-line me-2"></i>Forms<a
+                                    href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i
+                                        class="fe fe-x"></i></a></span>
+                            <span class="search-tags"><i class="ri ri-map-pin-line me-2"></i>Maps<a
+                                    href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i
+                                        class="fe fe-x"></i></a></span>
+                            <span class="search-tags"><i class="ri ri-server-line me-2"></i>Widgets<a
+                                    href="javascript:void(0)" class="tag-addon bg-transparent header-remove-btn"><i
+                                        class="fe fe-x"></i></a></span>
+                        </div>
+                        <div class="my-4">
+                            <p class="fw-semibold text-muted mb-2">Recent Search :</p>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                                <a href="notifications.html"><span>Notifications</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-2 alert">
+                                <a href="alerts.html"><span>Alerts</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                            <div class="p-2 border br-5 d-flex align-items-center text-muted mb-0 alert">
+                                <a href="mail-inbox.html"><span>Mail</span></a>
+                                <a class="ms-auto lh-1" href="javascript:void(0);" data-bs-dismiss="alert"
+                                    aria-label="Close"><i class="fe fe-x text-muted"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="btn-group ms-auto">
+                            <button class="btn btn-sm btn-primary-light">Search</button>
+                            <button class="btn btn-sm btn-primary">Clear Recents</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Country-selector modal -->
+
+        <!-- Footer opened -->
+        <footer class="footer mt-auto py-3 bg-white text-center">
+            <div class="container">
+                <span class="text-center">Copyright © <span id="year">2023</span>
+                    <a href="javascript:void(0)" class="text-primary">Synto</a>. Designed with <span
+                        class="ri ri-heart-fill text-danger"></span> by
+                    <a class="text-primary" href="javascript:void(0)"> Spruko </a> All rights reserved </span>
+            </div>
+        </footer> <!-- End Footer -->
+
+
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- Scroll To Top -->
+    <div class="scrollToTop">
+        <span class="arrow"><i class="ri-arrow-up-s-fill fs-20"></i></span>
+    </div>
+    <div id="responsive-overlay"></div>
+    <!-- Scroll To Top -->
+
+    <!-- Popper JS -->
+    <script src="build/assets/libs/%40popperjs/core/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="build/assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Node Waves JS-->
+    <script src="build/assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- Simplebar JS -->
+    <script src="build/assets/libs/simplebar/simplebar.min.js"></script>
+    <link rel="modulepreload" href="build/assets/simplebar-B35Aj-bA.js" />
+    <script type="module" src="build/assets/simplebar-B35Aj-bA.js"></script>
+    <!-- Color Picker JS -->
+    <script src="build/assets/libs/%40simonwep/pickr/pickr.es5.min.js"></script>
+
+
+    <!-- Date & Time Picker JS -->
+    <script src="build/assets/libs/flatpickr/flatpickr.min.js"></script>
+    <link rel="modulepreload" href="build/assets/date_time_pickers-CfSDcSmz.js" />
+    <script type="module" src="build/assets/date_time_pickers-CfSDcSmz.js"></script>
+    <!-- Choices JS -->
+    <script src="build/assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <!-- Internal Create Invoice JS -->
+    <link rel="modulepreload" href="build/assets/invoice-9soqJzAZ.js" />
+    <script type="module" src="build/assets/invoice-9soqJzAZ.js"></script>
+
+    <!-- Sticky JS -->
+    <script src="build/assets/sticky.js"></script>
+
+    <!-- Custom-Switcher JS -->
+    <link rel="modulepreload" href="build/assets/custom-switcher-oPg2q12r.js" />
+    <script type="module" src="build/assets/custom-switcher-oPg2q12r.js"></script>
+    <!-- APP JS-->
+    <link rel="modulepreload" href="build/assets/app-DhXvUdFt.js" />
+    <script type="module" src="build/assets/app-DhXvUdFt.js"></script>
+    <!-- END SCRIPTS -->
+
+</body>
